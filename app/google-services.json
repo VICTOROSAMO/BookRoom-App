@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "905526844722",
+    "project_id": "bookroom-app-81396",
+    "storage_bucket": "bookroom-app-81396.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905526844722:android:ea021c78170b51a7830b2b",
+        "android_client_info": {
+          "package_name": "com.accommodation.bookroomapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905526844722-ef7ml7i9itdfu6tklpkaf7nj2es3km25.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.accommodation.bookroomapp",
+            "certificate_hash": "7cd50a85591270a555657433daaf3ed0ed29a606"
+          }
+        },
+        {
+          "client_id": "905526844722-mdc3esrfdf7fesfin5uj0gsbkh3eglen.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS94CZarKT-VjFChrxdS4jtDGL0WvekfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905526844722-mdc3esrfdf7fesfin5uj0gsbkh3eglen.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
