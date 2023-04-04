@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FbookRoom2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/bg_img1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true">
+
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/txtview_background"
+            android:gravity="center"
+            android:text="These Hostel Buildings have rooms numbered 1 - 50 "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/txtview_background"
+            android:layout_height="40dp"
+            android:text="@string/slogan3"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/choose_btn"
+            android:background="@drawable/txtview_background"
+            android:layout_marginTop="330dp"
+            android:layout_gravity="center"
+            android:text="Choose room number"
+            android:textSize="12dp"
+            android:layout_alignParentBottom="true"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
