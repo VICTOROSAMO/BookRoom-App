@@ -56,10 +56,8 @@ public class LoginActivity extends AppCompatActivity {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 String email = editEmail.getText().toString().trim();
                 String pass = editPass.getText().toString().trim();
-
 
                 progress.setMessage("Logging in...");
                 progress.show();
@@ -67,8 +65,7 @@ public class LoginActivity extends AppCompatActivity {
                 if(!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                     if(!pass.isEmpty()){
 
-
-            mAuth.signInWithEmailAndPassword(email,pass).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                        mAuth.signInWithEmailAndPassword(email,pass).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
                         progress.dismiss();

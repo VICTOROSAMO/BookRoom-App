@@ -15,7 +15,7 @@ public class HealthMale extends AppCompatActivity {
 
 
     private Button yes_Btn, no_Btn;
-    private ImageView imageView;
+    private ImageView imageView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,18 +25,17 @@ public class HealthMale extends AppCompatActivity {
 
                 yes_Btn = findViewById(R.id.yes_btn);
                 no_Btn = findViewById(R.id.no_btn);
-                imageView = findViewById(R.id.mf_img);
+                imageView2 = findViewById(R.id.m_img);
 
                 Glide.with(this)
                         .load(R.drawable.maleicon)
-                        .into(imageView);
+                        .into(imageView2);
 
                 yes_Btn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        startActivity(new Intent(HealthMale.this, MaleBooking1.class));
-                        Toast.makeText(HealthMale.this, "Welcome to male student's Hostels", Toast.LENGTH_LONG).show();
-                        Toast.makeText(HealthMale.this, "Due to your health issues, Dispensaries are located nearby", Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(HealthMale.this, DropdownMenu.class));
+
                     }
                 });
 

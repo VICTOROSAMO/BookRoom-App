@@ -59,23 +59,17 @@ public class Sign_UpActivity extends AppCompatActivity {
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 String password = pass.getText().toString().trim();
                 String eMail = email.getText().toString().trim();
-
                 if (TextUtils.isEmpty(eMail)) {
                     email.setError("Email is Required");
-                    return;
-                }
-
+                    return;}
                 if (TextUtils.isEmpty(password)) {
                     pass.setError("Password is Required");
                     return;
                 }
-
                 progress.setMessage("Signing up, Please wait...");
                 progress.show();
-
 
                 mAuth.createUserWithEmailAndPassword(eMail, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
@@ -87,8 +81,7 @@ public class Sign_UpActivity extends AppCompatActivity {
                         } else {
                             progress.dismiss();
                             Toast.makeText(Sign_UpActivity.this, "Registration Failed" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                        }
-                    }
+                        }}
                 });
 
 

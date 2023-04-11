@@ -8,8 +8,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -31,6 +35,8 @@ public class FemaleBooking1 extends AppCompatActivity {
     private ReclyclerAdapter reclyclerAdapter;
     Button book_btn;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +44,7 @@ public class FemaleBooking1 extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recycler_view1);
         book_btn = findViewById(R.id.booking_btn);
+
 
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);

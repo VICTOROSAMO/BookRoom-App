@@ -26,8 +26,8 @@ public class HomeActivity extends AppCompatActivity {
         imageView = findViewById(R.id.mf_img);
 
         Glide.with(this)
-                        .load(R.drawable.male_female_img)
-                                .into(imageView);
+                       .load(R.drawable.male_female_img)
+                               .into(imageView);
 
         mBtn.setOnClickListener(new View.OnClickListener() {
             @Override

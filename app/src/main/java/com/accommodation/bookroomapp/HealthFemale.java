@@ -33,9 +33,8 @@ public class HealthFemale extends AppCompatActivity {
         yes_Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HealthFemale.this, FemaleBooking1.class));
-                Toast.makeText(HealthFemale.this, "Welcome to female student's Hostels", Toast.LENGTH_LONG).show();
-                Toast.makeText(HealthFemale.this, "Due to your health issues, Dispensaries are located nearby", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(HealthFemale.this, DropdownMenu.class));
+
             }
         });
 
